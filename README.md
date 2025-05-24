@@ -1,3 +1,18 @@
+## Installation
+
+```bash
+python -m venv venv
+source venv/Scripts/activate  # Git Bash ou CMD : venv\Scripts\activate.bat
+pip install -r requirements.txt
+```
+## 🚀 Tu veux aller plus loin ?
+
+Si tu veux **générer automatiquement** un `requirements.txt` propre, utilise cet outil :
+```bash
+pip install pipreqs
+pipreqs . --force
+```
+
 🗂️ Structure professionnelle du projet
 
 Voici un exemple d'arborescence claire :

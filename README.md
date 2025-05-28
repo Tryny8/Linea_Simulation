@@ -21,10 +21,10 @@ Apprentissage et mise en commun des concepts suivants:
 - Architecture de projet professionnel
 
 ## Version terminal
-[Version terminal](Linea_Simulation/documentation/pygame_version.png)
+[Version terminal](https://github.com/Tryny8/Linea_Simulation/blob/3361488081af2b6986a2a9dd5d1d1c4dff24d271/documentation/terminal_version.png)
 
 ## Version pygame
-[Version pygame](Linea_Simulation/documentation\pygame_version.png)
+[Version pygame](https://github.com/Tryny8/Linea_Simulation/blob/3361488081af2b6986a2a9dd5d1d1c4dff24d271/documentation/pygame_version.png)
 
 # Quick Start
 

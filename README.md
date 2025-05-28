@@ -58,11 +58,11 @@ python -m pygame_version
 ## Usage sans venv
 ### Version terminal
 ```bash
-python -m terminal_version
+python terminal_version
 ```
 ### Version Pygame
 ```bash
-python -m pygame_version
+python pygame_version
 ```
 
 # Contributing

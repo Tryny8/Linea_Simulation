@@ -1,21 +1,29 @@
-## Installation
+# Title
+
+Linea Simulation
+
+# Description
+
+Conception de logiciel Terminal et Pygame avec bibliothèque commune, Simulateur
+d'objet sur une ligne (1D) avec gestion de collision (Mur et objets)
+
+# "Why?" (Motivation/Goal/Problem to solve)
+
+Apprentissage et mise en commun des concepts suivants:
+- Créer une ligne ou rebondissent des objets (balles) sans arrêt
+- Gestion de la physique par bibliothèque
+- Gestion d'une idée par deux interface différente (Terminal / Pygame)
+- Gestion conception logiciel (Contrôleur/Vue/Modèle)
+- Architecture de projet professionnel
+
+# Quick Start
 
 ```bash
 python -m venv venv
 source venv/Scripts/activate  # Git Bash ou CMD : venv\Scripts\activate.bat
 pip install -r requirements.txt
 ```
-## 🚀 Tu veux aller plus loin ?
 
-Si tu veux **générer automatiquement** un `requirements.txt` propre, utilise cet outil :
-```bash
-pip install pipreqs
-pipreqs . --force
-```
-
-🗂️ Structure professionnelle du projet
-
-Voici un exemple d'arborescence claire :
 ```bash
 linea_simulation/
 ├── data/
@@ -36,77 +44,27 @@ linea_simulation/
 └── setup.py                    # (optionnel si installable)
 ```
 
-🔄 Modularisation et mutualisation
-core/physique.py
-Contient les fonctions purement logiques (pas d’I/O) :
+# Usage
 
-```python
-def are_colliding(obj1, obj2): ...
-def handle_collision(obj1, obj2): ...
-def record_position(obj): ...
-```
-Ce fichier doit être totalement neutre sur l’affichage et les sons.
-
-core/sound_manager.py
-Une classe unique qui encapsule les appels à winsound.Beep ou autres, avec :
-
-gestion des fréquences/types
-
-activation/désactivation du son
-
-threading intégré
-
-data/objects.py
-Contient objects = [...], que tu peux réutiliser dans tous les modes.
-
-🧩 Version terminal vs Pygame
-terminal_version/terminal_simulation.py
-La classe LineaSimulationTerminal, qui :
-
-utilise core/physique
-
-utilise core/sound_manager via composition
-
-reste découplée du Pygame
-
-pygame_version/pygame_simulation.py
-Même principe, mais avec affichage Pygame :
-
-mêmes update_physics
-
-render spécifique Pygame
-
-sons via le même SoundManager
-
-🛠️ Améliorations de structure
-Ajoute des docstrings sur les fonctions & classes
-
-Typage des arguments et des retours (-> None, -> float)
-
-Nommage cohérent (update_physics, run_simulation, handle_events, etc.)
-
-Gestion d’erreurs minimale : try/except dans les bons endroits
-
-✅ Étapes concrètes
-📁 Crée les dossiers : core/, data/, terminal_version/, pygame_version/
-
-✂️ Déplace les morceaux de code dans les bons fichiers (par découpage, pas réécriture)
-
-🔁 Réécris les imports (from core.physique import ...)
-
-🧪 Teste chaque version indépendamment
-
-📝 Ajoute un README clair
-
-📌 Ajoute un requirements.txt (Pygame, si utilisé)
-
-📦 Bonus : rendre installable
-Si tu veux en faire un paquet installable :
-
-ajoute un setup.py
-
-définis les entry_points pour pouvoir lancer la version terminale avec une commande comme :
-
+## Usage avec venv
+### Version terminal
 ```bash
 python -m terminal_version
 ```
+### Version Pygame
+```bash
+python -m pygame_version
+```
+## Usage sans venv
+### Version terminal
+```bash
+python -m terminal_version
+```
+### Version Pygame
+```bash
+python -m pygame_version
+```
+
+# Contributing
+Projet d'apprentissage et recherche d'emploi, pas d'améliorations et de nouvelle options prévu.
+Un second projet en 2D puis 3D sont prévu, plus tard.

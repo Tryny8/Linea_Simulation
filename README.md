@@ -4,17 +4,27 @@ Linea Simulation
 
 # Description
 
-Conception de logiciel Terminal et Pygame avec bibliothèque commune, Simulateur
-d'objet sur une ligne (1D) avec gestion de collision (Mur et objets)
+Conception de logiciel Terminal et Pygame avec bibliothèque commune.
+Simulateur d'objet sur une ligne (1D) avec gestion de collision (Mur et objets)
+Avec ajout d'informations dynamique à propos des objets.
 
 # "Why?" (Motivation/Goal/Problem to solve)
 
-Apprentissage et mise en commun des concepts suivants:
+Objectif:
 - Créer une ligne ou rebondissent des objets (balles) sans arrêt
+
+Apprentissage et mise en commun des concepts suivants:
+- Regroupement de différents codes sur un unique projet 
 - Gestion de la physique par bibliothèque
 - Gestion d'une idée par deux interface différente (Terminal / Pygame)
-- Gestion conception logiciel (Contrôleur/Vue/Modèle)
+- Gestion de la conception logiciel (Contrôleur/Vue/Modèle)
 - Architecture de projet professionnel
+
+## Version terminal
+![Version terminal](documentation\terminal_version.png)
+
+## Version pygame
+![Version pygame](documentation\pygame_version.png)
 
 # Quick Start
 
